@@ -1,0 +1,26 @@
+[
+ {
+  "titulo": "Repasar JS",
+  "estado": "Pendiente"
+ },
+ {
+  "titulo": "Armar la app de Tareas",
+  "estado": "en progreso"
+ },
+ {
+  "titulo": "Break",
+  "estado": "pendiente"
+ },
+ {
+  "titulo": "Desarrollar la app",
+  "estado": "pendiente"
+ },
+ {
+  "titulo": "Tarea Nueva",
+  "estado": "pendiente"
+ },
+ {
+  "titulo": "Tarea Nueva segunda prueba",
+  "estado": "pendiente"
+ }
+]
