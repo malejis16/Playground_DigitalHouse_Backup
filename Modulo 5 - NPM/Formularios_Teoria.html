@@ -1,0 +1,147 @@
+<!-- Etiqueta Form /ACTION = define donde se va a procesar la información capturada
+y METHOD = Como se va a enviar esa información GET / POST -->
+
+<form action='' method="" > </form>
+
+<!-- Label sirve para acompañar un texto que acompañe el formulario -->
+<label for=''> Nombre Completo </label>
+
+<!-- type = 
+    text / recibe una linea de caracteres alfa numericos
+    Paswrord / una sola linea pero cualquier cosa que se escribe no se ve
+    email / el campo valida que lo ingresado sea una entrada de correo 
+    tel / el visitante en un disopsitivo mobil general un teclado numerico
+
+    El atributo name ES OBLIGATORIO
+     -->
+
+<input type='text'> 
+
+<!-- Para que las personas escriban un parrafo -->
+<textarea name='' id='' cols='30' rows='10'></textarea>
+
+<!-- Box select generará una caja donde se pondra una lista en donde queramos elegir una opcion
+    El seleced es opcional, se usa para preseleccionar la opción -->
+
+<select name='' id=''>
+    <option value='arg' selected> Argentina </option>
+    <option value='col'> Colombia </option>
+    <option value='Ecu'> Ecuador </option>
+    <option value='Per'> Peru </option>
+</select>
+
+<!-- Boton para enviar la información -->
+<button type="reset"> Borrar </button>
+<button type="submit"> Enviar </button>
+
+<!-- ATRIBUTOS IMPORTANTES -->
+
+name = "nos permite dale un nombre a cada elemento "
+value = "son valores que vienen preconfigurados de acuerdo a una opción que elija el usuario"
+required = puede ser utilizado en cualquier campo que sea input y obligara que ese campo sea obligatorio
+           en caso de que el campo esté vacio, el sistema generará una alerta.
+placeholder = Es el texto que aparece como guia (Ej: correo@correo.com) para ayudar al usuario
+
+<!-- Ejemplo de Formulario -->
+<form action='' method="">
+    <div>
+        <label for='nombre'>Nombre Completo</label>
+        <input id ="nombre" type='text' name = "nombreUsuario">
+    </div>
+    <div>
+        <label for='password'>Contraseña</label>
+        <input id = "password" type='text' name = "contraseñaUsuario">
+    </div>
+    <div>
+        <label for='email' >Correo Electronico</label>
+        <input id = "email" type='text' name = "correoUsuario">
+    </div>
+    <button type ="submit"> Enviar </button>
+</form>
+
+RADIO BUTTONS Y CHECKBOXES
+
+<!-- Para que solamente se pueda elegir una opcion, es necesario poner la palabra name y nombrarlos
+a todos por igual  -->
+
+<label for=''>
+    <input type='radio' name ="tipoDeSuscripcion">
+    Quincenal
+</label>
+<label for=''>
+    <input type='radio' name ="tipoDeSuscripcion">
+    Mensual
+</label>
+<label for=''>
+    <input type='radio' name ="tipoDeSuscripcion">
+    Anual
+</label>
+
+<!-- aqui el nombre solo es un identificador ya que el usuario puede elegir mas de una opcion
+lo realmente importante es el value, para poder diferenciar en nuestro JS las opciones ingresadas
+ -->
+
+<label for=''>
+    <input type='checkbox' name ="pasatiempos" value ="tv">
+    Ver TV
+</label>
+<label for=''>
+    <input type='checkbox' name ="pasatiempos" value ="ejer">
+    Ejercicio
+</label>
+<label for=''>
+    <input type='checkbox' name ="pasatiempos" value ="Js">
+    Aprender JS
+</label>
+
+FORMULARIOS AVANZADOS
+
+<!-- generará un calendario en pantalla / el value se mestra en el texto de ejemplo-->
+<input type='date' name ="fechaNacimiento" value="1958-08-01" min="2018-01-01" max="2022-12-31">
+
+<!-- generará un buscador para las carpetas del sistema local 
+    atributo Multiple = para cargar varios archivos
+    atributo ACCEPT = la clase de archivos que permitimos recibir-->
+<input type='file' multiple accept=".jpg, .npg" >
+
+<!-- En caso de tener errores hay que agregar un Span que va luego a ser
+ejecutado por JS -->
+<div>   
+    <label>Nombre completo</label>
+        <input type = 'text' name= "nombreCompleto">
+        <span class = "feedback"></span>   
+    </label>
+</div>
+
+PSEUDO SELECTORES:  nos permite crear elementos y aplicar estilos en funcion de los estados y 
+organización de los elementos
+
+<!-- PSEUDO-CLASE : Nos permite aplicar estilos
+    //enlaces
+    :link      = modifica el enlace css pero si sigue otra clase, la pisarán.
+    :visited   = solamente para enlaces
+    :hover     = aplica sus lineas de css cuando el cursor pase sobre el elemento, puede ser aplicada a cualquier elemento
+    :active
+    //Inputs
+    :focus   = cuando el cursor se encuentra dentro de dicho elemento, normalmente a los campos de u formulario
+    :disable = opciones que no se pueden llenar en un formulario o estan deshabilitadas
+    :target
+    :firts-letter
+    :first-line
+
+
+    PSEUDO-ELEMENTOS: se encargan de manipular el contenido de un elemento / nos permite crear elementos 
+    ::before =  content = el contenido que queremos insertar antes del elemento asignado
+    ::after = content = despues del contenido se inserta el comentario
+
+    selector #id .class :pseudoclase ::pseudoelemento [atributo]{
+    propierdad: valor;
+    propiedad: valor;
+    propiedad: valor;
+}
+-- >
+
+
+VALIDACIONES
+
+en los atributos es : required minlength ="3";

@@ -1,0 +1,114 @@
+Position
+
+Cuando desplazamos un elemento tomando un costado con referencia, empujaremos el elemento si el numero es positivo o tiraremos de él 
+es negativo.
+
+left: -50 
+left: 50
+
+Posicionamiento Relativo:
+Desde posicion original a una nueva posicion
+.caja{
+    position: relative;
+    left: 100px;
+    top: 50px
+}
+
+Posicionamiento absoluto nos permite trasladar un elemento tomando como referencia los costados del body
+los puntos de referencia serán los costados del body
+el espacio que ocupa quedará vacio y otros elementos podrán ocuparlo
+
+.caja2{
+    position: absolute;
+    right: 100px;
+    bottom 50px;
+}
+
+Position relative + Position absolute 
+
+Si nuestras cajas (hijas) están dentro de otra cada(padre), 
+el punto de referencia seguirá siendo el body a menos que hagamos relativa 
+la posición de su padre.
+
+div { position: relative}
+
+.caja{
+    position: absolute;
+    right: 100px;
+    top: 50px;
+}
+
+Posicionamiento Fijo
+
+El posicionamiento fijo nos permite trasladar un elemento tomando como referencia la ventana del navegador.
+
+.botonFucsia {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+
+/////////////////////////////////// Z  - INDEX ///////////////////////////////////////////////////
+El Z index nos permite cambiar el orden de las "capas" dentro de un documento HTLML
+caja2{
+    position: relative;
+    z-index:10;
+}
+
+/////////////////////////////////// TRANSICIONES ///////////////////////////////////////////////////
+
+
+caja{
+    background-color: #FFF;
+    color: #000;
+    transition-property: background-color, color;
+    transition-duration: 0.5s
+}
+
+caja:hover {
+    background-color: #orange;
+    color: #black;
+}
+
+- transition-property
+
+- transition-duration
+
+
+/////////////// 2da MANERA /////////////////////
+
+caja{
+    background-color: #FFF;
+    color: #000;
+    transition: 
+        background-color, 0.4s;
+        color, 0.5s
+}
+
+
+/////////////// 3ra MANERA /////////////////////
+
+caja{
+    background-color: #FFF;
+    color: #000;
+    transition: all 0.5s;
+}
+
+
+/////////////// ANIMACIONES /////////////////////
+
+@keyframes fantasmaT{
+
+    0%   {opacity: 0%}
+    25%  {transform: translateY(-20px); opacity: 100%}
+    100% {opacity: 0%}
+}
+
+- animation-name: definir cual es la animación que queramos utilizar
+- animation-duration: para establecer el tiempo que debe durar la animación
+- animation-iteration-count: para definir cuantas veces se repetira la animación (infinite)
+
+.fantasma {
+    animation: fastasmaT 3s infinite;
+}

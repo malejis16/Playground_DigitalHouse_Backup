@@ -1,0 +1,22 @@
+.precio {
+  color: green;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic; /*Estilo de la letra*/
+  font-weight: 100; /*grueso de la letra*/
+  text-align: center; /*alineación de texto*/
+  text-decoration: underline red; /* (overline) permite introducir modificaciones como subrayar o tachar*/
+}
+
+.precios-azules .precio {
+  color: blueviolet;
+}
+
+.precios-rojos .precio {
+  color: rgb(6, 67, 102);
+}
+
+li {
+  line-height: 35px; /*altura de un renglon*/
+  border: solid blue 1px;
+}

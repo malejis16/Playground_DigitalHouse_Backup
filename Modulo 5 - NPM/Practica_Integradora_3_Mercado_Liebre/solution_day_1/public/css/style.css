@@ -1,0 +1,85 @@
+body {
+  background-color: #ebebeb;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+header {
+  background-color: #eac926;
+  margin: 5px 5px 5px 5px;
+}
+
+#tituloML {
+  width: 120px;
+}
+
+#bann {
+  width: 335px;
+  margin: 0px 5px 5px 5px;
+}
+
+.titulares {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.seccion1 .contenedor {
+  display: flex;
+  background-color: white;
+  margin: 0px 5px 0px 5px;
+}
+
+.seccion2 .contenedor {
+  display: flex;
+  background-color: white;
+  margin: 0px 5px 0px 5px;
+}
+
+#img {
+  width: 335px;
+  margin: 0px 5px 5px 5px;
+}
+
+.precios {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px 10px 0px 20px;
+}
+
+.descuentos {
+  color: #39b54a;
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px 10px 0px 0px;
+}
+
+.descripciones {
+  font-size: 16px;
+  margin: 10px 5px 5px 10px;
+}
+.burger-menu {
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+}
+
+.IF {
+  color: #1259c3;
+  border-radius: 3px;
+  margin: 10px 10px 10px 5px;
+  padding: 10px 150px 10px 150px;
+  display: block;
+}
+
+.TF {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+}
+
+.TextF {
+  text-align: center;
+  margin: 10px 50px 10px 50px;
+}
